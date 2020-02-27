@@ -1,0 +1,7 @@
+<form [formGroup]="parentForm" (ngSubmit)="onSubmit()">
+  <app-sub-form-b (formReady)="onFormReady('subFormB', $event)"></app-sub-form-b>
+  <br><br>
+  <app-sub-form-c (formReady)="onFormReady('subFormC', $event)"></app-sub-form-c>
+  <br>
+  <button type="submit">Submit</button>
+</form>
